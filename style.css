@@ -1,0 +1,477 @@
+/* Reset Box Model */
+* {
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    margin: 0;
+    font-family: "Sofia", sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    background-color: #f0f0f0; /* Light Gray Background */
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(to bottom, #086280, #b3c4cf); /* Gradient Background */
+    font-weight: 600;
+    font-size: 22px;
+    justify-content: flex-start;
+    text-align: center;
+    height: 80px;
+    overflow: hidden;
+}
+
+/* Form Control Styles */
+.form-control {
+    margin-left: 500px; /* Adjust as Needed */
+}
+
+/* Main Section Styles */
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Aside Navigation Styles */
+aside {
+    float: left;
+    width: 20%;
+    height: auto;
+    overflow-y: auto;
+    background: linear-gradient(to top, #333333, #666666); /* Dark Gradient Background */
+    padding: 20px;
+    box-sizing: border-box;
+    position: sticky;
+}
+
+/* User Styles */
+.user {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+/* Custom Horizontal Line Styles */
+.custom-horizontal-line {
+    border-top: 2px solid #555555; /* Dark Gray Line */
+    margin-left: -10px;
+}
+
+/* Options Link Styles */
+.options a {
+    color: white;
+    background-color: #4CAF50; /* Green Background */
+    margin: 1px;
+    font-style: italic;
+}
+
+.options a:hover {
+    color: #ffcc00; /* Yellow Hover Color */
+}
+
+.options a h4 {
+    font-size: 18px;
+}
+
+/* Section Styles */
+section {
+    float: right;
+    width: 80%;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url('https://placeimg.com/1200/800/any'); /* Overlay with Image Background */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Containers Styles */
+.containers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Home Section Styles */
+.home,
+.about,
+.offers,
+.pizzlist,
+.desertlist,
+.feedback,
+.shops,
+.home3,
+.footersection {
+    border-bottom: 5px solid white;
+}
+
+.home {
+    width: 100%;
+    text-align: center;
+    color: #333333; /* Dark Text Color */
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height: 60vh;
+}
+
+.home::after {
+    content: "";
+    backdrop-filter: blur(10px);
+}
+
+.home img {
+    margin-top: 60px;
+    border-radius: 50%;
+    border: 10px solid white;
+    margin-left: 100px;
+}
+
+.home .home-text {
+    margin-left: 80px;
+    padding-top: 20px;
+    margin-right: 60px;
+}
+
+/* Blinking Text Animation */
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        color: #ff9900; /* Orange Blinking Color */
+    }
+}
+
+.blinking-text {
+    animation: blink 4s infinite;
+}
+
+/* About Section Styles */
+.about {
+    text-align: center;
+    color: #ffffff; /* White Text Color */
+    padding: 20px 60px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.6); /* Darker Overlay */
+}
+
+/* Offer Section Styles */
+.offer {
+    padding: 50px;
+    display: flex;
+    text-align: center;
+    animation: moveImages 30s linear 1s infinite running;
+    white-space: wrap;
+}
+
+.offer img {
+    margin: 10px;
+    border-radius: 30px;
+    border: 5px solid #ffcc00; /* Yellow Border */
+    width: 100vw;
+    object-fit: cover;
+}
+
+@keyframes moveImages {
+    0% {
+        transform: translateX(0);
+        margin-left: 1000px;
+    }
+
+    100% {
+        transform: translateX(-200%);
+        margin-left: 0px;
+    }
+}
+
+/* Shops Section Styles */
+.shops {
+    color: #ffffff; /* White Text Color */
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.shopslist {
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image {
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+}
+
+.image img {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    border: 5px solid #ffffff; /* White Border */
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: #ffffff; /* White Text Color */
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image:hover .overlay {
+    transform: translateY(0);
+}
+
+.info {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Pizza List Section Styles */
+.pizzlist {
+    color: #ffffff; /* White Text Color */
+    text-align: center;
+    margin-bottom: 0%;
+}
+
+/* Dessert List Section Styles */
+.desertlist {
+    color: #ffffff; /* White Text Color */
+    text-align: center;
+}
+
+/* Card Container Styles */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto 60px;
+}
+
+.card {
+    width: calc(33.33% - 10px);
+    margin-bottom: 80px;
+    box-sizing: border-box;
+}
+
+.imgcard {
+    width: 100%;
+    height: 200px;
+    border-radius: 50px 0px;
+    background-size: cover;
+}
+
+.card-title {
+    color: #ffcc00; /* Yellow Title Color */
+}
+
+.card-body {
+    background-color: #333333; /* Dark Background Color */
+    color: #ffffff; /* White Text Color */
+}
+
+/* Feedback Section Styles */
+.home3 {
+    text-align: center;
+    margin: auto;
+    padding: 30px 0px;
+    width: 100%;
+}
+
+.feedbackcard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-evenly;
+}
+
+.bi-star-fill {
+    color: #ffcc00; /* Yellow Star Color */
+}
+
+/* Feedback Form Styles */
+.feedback {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 60px;
+    color: #ffffff; /* White Text Color */
+}
+
+.feedback-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 800px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    color: #ffffff; /* White Text Color */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc; /* Light Gray Border */
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50; /* Green Button Color */
+    color: #ffffff; /* White Text Color */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff9900; /* Orange Hover Color */
+}
+
+/* Footer Section Styles */
+.footersection {
+    background: linear-gradient(to bottom, #97b7c2, #5f7291); /* Gradient Background */
+    margin: 0px 0px 30px 0px;
+    height: 300px;
+    color: #ffffff; /* White Text Color */
+    display: flex;
+    flex-direction: row;
+}
+
+.footersection h2 {
+    margin: 30px;
+}
+
+.col1,
+.col2,
+.col3,
+.col4 {
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.col1 p,
+.col2 p,
+.col3 p,
+.col4 p {
+    margin: 0px;
+}
+
+.col3 .icons {
+    font-size: 30px;
+    justify-content: space-around;
+}
+
+.col1 a,
+.col2 a,
+.col3 .icons a {
+    color: #ffffff; /* White Link Color */
+}
+
+.col1 a:hover,
+.col2 a:hover,
+.col3 .icons a:hover {
+    color: #ff9900; /* Orange Hover Color */
+}
+
+footer {
+    background: linear-gradient(to bottom, #1193cb, #9cccda); /* Gradient Background */
+    color: #ffffff; /* White Text Color */
+    text-align: center;
+    position: fixed;
+    padding: 10px 0px;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+}
+
+.page-wrapper {
+    overflow: visible;
+}
+
+/* Responsive Styles */
+@media (max-width: 1440px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+
+    header {
+        flex-wrap: wrap;
+        display: flex;
+        overflow: visible;
+        height: 100px;
+    }
+
+    .container-fluid img {
+        scale: 0.8;
+    }
+
+    .home {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        /* overflow: hidden; */
+        height: 38vh;
+        flex-direction: column;
+    }
+
+    .home img {
+        margin-right: 65px;
+    }
+
+    .about {
+        overflow: visible;
+    }
+
+    .blinking-text {
+        display: block;
+    }
+
+    aside {
+        width: 100%;
+        height: 9vh;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .feedback {
+        height: 700px;
+    }
+
+    .footersection {
+        height: 600px;
+        width: 100%;
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .page-wrapper {
+        overflow: hidden;
+    }
+}

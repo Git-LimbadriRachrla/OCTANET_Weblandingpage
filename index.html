@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Protest+Riot&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <img style=" border-radius: 80%; margin-bottom: 5px;" src="./assests/logo.jpg" alt=""
+                        width="100px" height="70px">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-3">
+                            <li class="nav-item">
+                                <a style="color: yellow; margin-top: 10px;" class="nav-link active ml-5"
+                                    aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="color: yellow; margin-top: 10px;" class="nav-link active ml-3"
+                                    href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a style="color: yellow; margin-top: 10px;" class="nav-link active  ml-3"
+                                    href="#">Shops</a>
+                            </li>
+                        </ul>
+
+                        <form class="d-flex">
+                            <input class="form-control col col-lg-5 me-3 mr-2 float-right " type="search"
+                                placeholder="Search" aria-label="Search">
+                            <button class="btn btn-warning" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <aside>
+                <div class="user">
+                    <h2 style="color: rgb(255, 255, 255);"><i class="bi bi-person-circle"></i></h2>
+                    <h4 style="color: white;margin-top: 5px;">RACHARLA LIMBADRI</h4>
+                </div>
+                <p style="color: white;">Nizamabad, Telangana, India</p>
+                <div class="custom-horizontal-line"></div>
+
+                <div class="options">
+                    <a href="">
+                        <h4>Profile<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                            </svg> </h4>
+                    </a>
+                    <a href="">
+                        <h4>Your Orders <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                            </svg> </h4>
+                    </a>
+                    <a href="">
+                        <h4>Offers<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                            </svg> </h4>
+                    </a>
+                    <a href="">
+                        <h4>Feedback<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                            </svg> </h4>
+                    </a>
+                    <a href="">
+                        <h4>Contact Us<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                            </svg> </h4>
+                    </a>
+                    <a href="">
+                        <h4>Choose Language <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                            </svg> </h4>
+                    </a>
+                    <div class="custom-horizontal-line"></div>
+                    <a href="">
+                        <h5>Logout</h5>
+                    </a>
+                    <div class="custom-horizontal-line"></div>
+                    <a href="">
+                        <p><em>Terms and Conditions ></em></p>
+                    </a>
+                </div>
+            </aside>
+            <!-- =========================================================================================== -->
+            <section>
+                <div class="containers">
+                    <div class="home">
+                        <div class="img"><img src="./assests/logo.jpg" alt="" width="300px" height="260px">
+                        </div>
+                        <div class="home-text">
+                            <h2
+                                style="font-family:Lobster, sans-serif; font-size:56px; font-weight: 600; color: #ffffff;">
+                                Welcome to the </h2>
+                            <h1
+                                style=" text-shadow:3px 4px #ffffff;color: #ff0000; font-family: Protest Riot, sans-serif;font-size: 100px;">
+                                Biryani House</h1>
+                            <h5 style="color: rgb(234, 234, 32);font-family:Protest Riot, sans-serif;font-size: 40px;">
+                                Savor Blissful Bites together</h5>
+                            <p style="font-size: 18px; color: #ffffff;">Savor savory of Biryani's and irresistible desserts in
+                                one place - a perfect harmony of flavors
+                                at our unique Biryani & Dessert Combo Shop</p>
+                            <div class="blinking-text"
+                                style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #2fff05; font-size: 40px;">
+                                50% Off on Your 1st Offer!!</div>
+                        </div>
+                    </div>
+                    <div class="about">
+                        <br>
+                        <h1 style="margin-bottom: 20px; margin-top: 20px;">About</h1>
+                        <p style="margin-bottom: 60px;line-height: 30px;font-size: 18px;padding: 30px;">
+                            Welcome to Biryani House, a haven where aromatic spices dance in harmony to create an unforgettable culinary journey. Dive into a symphony of flavors with our signature biryanis, each dish crafted with the finest ingredients and perfected with generations of expertise. From the fragrant Basmati rice to the tender, marinated meats, every bite is a celebration of authenticity.
+
+But the feast doesn't stop there. Indulge your senses with our tantalizing appetizers, each one a burst of flavor, from crispy samosas to succulent kebabs. And as you savor the richness of our main courses, don't forget to save room for our delightful desserts. From creamy kheer to decadent gulab jamun, our sweets are the perfect finale to your meal.
+
+At Biryani House, we are more than a restaurant—we are storytellers of tradition and flavor. Join us in our warm and inviting ambiance, where every dish tells a tale of culture and passion. Whether you're dining with family, friends, or colleagues, let us take you on a culinary journey that will linger in your memory long after the last bite. Experience the magic of Biryani House, where every meal is a celebration of heritage and taste.</p>
+                    </div>
+
+                    <div class="offers">
+                        <h1 style="color: white;text-align: center;margin-top: 50px;">Offers</h1>
+                        <h3 class="blinking-text" style="color: yellow;text-align: center;margin-top: 25px;">Exclusive
+                            offer of Biryani's are here!!!</h3>
+                        <div class="offer ">
+                            <img src="./assests/offer11.jpg" alt="" width="250px" height="300px">
+                            <img src="./assests/dessertcoupon1.png" alt="" width="250px" height="300px">
+                            <img src="./assests/offer21.jpg" alt="" width="250px" height="300px">
+                            <img src="./assests/dessertcoupon21.jpg" alt="" width="250px" height="300px">
+                        </div>
+                    </div>
+
+                    <div class="shops">
+                        <h1 style="margin: 40px;">Shops</h1>
+                        <p><em>We are present in 5 cities in Telangana</em></p>
+                        <h4 style="color: yellow;"> *| Visit the shops in 3.00 PM to 10.00 PM |*</h4>
+                        <div class="shopslist">
+                            <div class="image">
+                                <img src="./assests/sh1.jpg" alt="">
+                                <div class="overlay">
+                                    <div class="info">
+                                        <h3>khaleelwadi</h3>
+                                        <p>pt.21/9, front of JW marriot, S.B.road, Shivaji nagar, Nizamabad - 503246</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="image">
+                                <img src="./assests/sh2.jpg" alt="">
+                                <div class="overlay">
+                                    <div class="info">
+                                        <h3>Vinayak Nagar</h3>
+                                        <p>J.M. Road, near NG college, Tilak Road, Mancherial - 505212</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="image">
+                                <img src="./assests/sh3.jpg" alt="">
+                                <div class="overlay">
+                                    <div class="info">
+                                        <h3>Pragathi Nagar!</h3>
+                                        <p>ft.45/A/16, Monkey Society, Dolbol Mall,Medak  - 505232</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="image">
+                                <img src="./assests/sh4.jpg" alt="">
+                                <div class="overlay">
+                                    <div class="info">
+                                        <h3>Krihna nagar</h3>
+                                        <p> 4th stall, Pi-Some garden, Nalgonda - 505212</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="image">
+                                <img src="./assests/sh5.jpg" alt="">
+                                <div class="overlay">
+                                    <div class="info">
+                                        <h3>Biryani House</h3>
+                                        <p>Amay nagar, hyd Highway, peddapalli - 505212</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="pizzlist">
+                    <h1 style="margin-top: 50px;">Biryani's</h1><br>
+                    <p>This is the main content of the landing page.</p><br>
+                    <div class="card-container">
+                        <div class="card " style="width: 18rem;">
+                            <img src="./assests/hyderabad.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Hyderabad Biryani</h4>
+                                <p class="card-text"> straight from the royal kitchens of Hyderabad.</p>
+                                <div class="cb"
+                                    style="display:flex;flex-direction:row;justify-content:space-around;margin: 12px;font-size: 13px;">
+                                    <input type="checkbox">Cheesy
+                                    <input type="checkbox">Toppings
+                                    <input type="checkbox">Chicken
+                                </div>
+                                <h3 style="padding: 5px;margin-top: 35px;">₹ 169/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/ambur.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">ambur Biryani</h4>
+                                <p class="card-text">a famous South Indian specialty with fragrant rice and tender</p>
+                                <div class="cb"
+                                    style="display:flex;flex-direction:row;justify-content:space-around;margin: 12px;font-size: 13px;">
+                                    <input type="checkbox">Cheesy
+                                    <input type="checkbox">Toppings
+                                    <input type="checkbox">Chicken
+                                </div>
+                                <h3 style="padding: 5px;margin-top: 35px;">₹ 129/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/awadhi.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">awadhi Biryani</h4>
+                                <p class="card-text"> a royal delicacy from the kitchens of Awadh, known for its rich flavors 
+                                    pull</p>
+                                <div class="cb"
+                                    style="display:flex;flex-direction:row;justify-content:space-around;margin: 12px;font-size: 13px;">
+                                    <input type="checkbox">Spicy
+                                    <input type="checkbox">Aromatic
+                                    <input type="checkbox">TenderPiece
+                                </div>
+                                <h3 style="padding: 5px;">₹ 119/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/malabar.pg.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">malaabar biryani</h4>
+                                <p class="card-text">a flavorful and aromatic dish with roots in the culinary traditions
+                                </p>
+                                <div class="cb"
+                                    style="display:flex;flex-direction:row;justify-content:space-around;margin: 12px;font-size: 13px;">
+                                    <input type="checkbox">Spicy
+                                    <input type="checkbox">Aromatic
+                                    <input type="checkbox">TenderPiece
+                                </div>
+                                <h3 style="padding: 5px;">₹ 89/-</h3>
+                                <a href="#" class="btn btn-primary ">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/hyderabadmutton.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Mutton biryani</h4>
+                                <p class="card-text">a timeless favorite with tender pieces of mutton cooked to perfection </p>
+                                <div class="cb"
+                                    style="display:flex;flex-direction:row;justify-content:space-around;margin: 12px;font-size: 13px;">
+                                    <input type="checkbox">Spicy
+                                    <input type="checkbox">Aromatic
+                                    <input type="checkbox">TenderPiece
+                                </div>
+                                <h3 style="padding: 5px;">₹ 219/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/frybiryani.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Fry piece biryani</h4>
+                                <p class="card-text">a delicious blend of crispy fried pieces and fragrant rice</p>
+                                <div class="cb"
+                                    style="display:flex;flex-direction:row;justify-content:space-around;margin: 12px;font-size: 13px;">
+                                    <input type="checkbox">Spicy
+                                    <input type="checkbox">Aromatic
+                                    <input type="checkbox">TenderPiece
+                                </div>
+                                <h3 style="padding: 5px;">₹ 249/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/prawnbiryani.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">prawns biryani</h4>
+                                <p class="card-text">a seafood lover's dream with tender prawns cooked to perfection</p>
+                                <div class="cb"
+                                    style="display:flex;flex-direction:row;justify-content:space-around;margin: 12px;font-size: 13px;">
+                                    <input type="checkbox">Spicy
+                                    <input type="checkbox">Aromatic
+                                    <input type="checkbox">TenderPiece
+                                </div>
+                                <h3 style="padding: 5px;">₹ 199/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/mushroom.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">mushroom</h4>
+                                <p class="card-text">a savory and aromatic delight for mushroom lovers everywhere</p>
+                                <div class="cb"
+                                    style="display:flex;flex-direction:row;justify-content:space-around;margin: 12px;font-size: 13px;">
+                                    <input type="checkbox">Spicy
+                                    <input type="checkbox">Aromatic
+                                    <input type="checkbox">TenderPiece
+                                </div>
+                                <h3 style="padding: 5px;">₹ 269/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/paneer.jpg" class="imgcard" alt="...">
+                            <div class="card-body ">
+                                <h4 class="card-title">paneer Birayani</h4>
+                                <p class="card-text"> a rich and flavorful blend of fragrant rice and succulent paneer pieces. </p>
+                                <div class="cb"
+                                    style="display:flex;flex-direction:row;justify-content:space-around;margin: 12px;font-size: 13px;">
+                                    <input type="checkbox">Spicy
+                                    <input type="checkbox">Aromatic
+                                    <input type="checkbox">TenderPiece
+                                </div>
+                                <h3 style="padding: 5px;margin-top: 35px;">₹ 319/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/veg.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Veg biryani</h4>
+                                <p class="card-text"> a delightful medley of aromatic rice and fresh vegetables.</p>
+                                <div class="cb"
+                                    style="display:flex;flex-direction:row;justify-content:space-around;margin: 12px;font-size: 13px;">
+                                    <input type="checkbox">Spicy
+                                    <input type="checkbox">Aromatic
+                                    <input type="checkbox">TenderPiece
+                                </div>
+                                <h3 style="padding: 5px;">₹ 259/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/afghan.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">afghan biryani</h4>
+                                <p class="card-text">a delicious fusion of flavors from the heart of Afghanistan.</p>
+                                <div class="cb"
+                                    style="display:flex;flex-direction:row;justify-content:space-around;margin: 12px;font-size: 13px;">
+                                    <input type="checkbox">Spicy
+                                    <input type="checkbox">Aromatic
+                                    <input type="checkbox">TenderPiece
+                                </div>
+                                <h3 style="padding: 5px;margin-top: 35px;">₹ 259/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/peri.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Peri Peri Chicke biryani</h4>
+                                <p class="card-text">a spicy and flavorful twist on the classic, sure to tantalize your taste buds!</p>
+                                <div class="cb"
+                                    style="display:flex;flex-direction:row;justify-content:space-around;margin: 12px;font-size: 13px;">
+                                    <input type="checkbox">Spicy
+                                    <input type="checkbox">Aromatic
+                                    <input type="checkbox">TenderPiece
+                                </div>
+                                <h3 style="padding: 5px;margin-top: 35px;">₹ 319/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/plain.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Plain Biraynia</h4>
+                                <p class="card-text">plain biryani, a classic blend of fragrant rice and tender spices./p>
+                                <div class="cb"
+                                    style="display:flex;flex-direction:row;justify-content:space-around;margin: 12px;font-size: 13px;">
+                                    <input type="checkbox">Spicy
+                                    <input type="checkbox">Aromatic
+                                    <input type="checkbox">TenderPiece
+                                </div>
+                                <h3 style="padding: 5px;">₹ 109/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/marriage.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Marriage style biryani</h4>
+                                <p class="card-text">Marriage style biryani, a culinary celebration of flavors</p>
+                                <div class="cb"
+                                    style="display:flex;flex-direction:row;justify-content: space-around;;margin: 12px;font-size: 13px;">
+                                    <input type="checkbox">Spicy
+                                    <input type="checkbox">Aromatic
+                                    <input type="checkbox">TenderPiece
+                                </div>
+                                <h3 style="padding: 5px;margin-top: 35px;">₹ 129/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/mixed.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Mixed Birayani</h4>
+                                <p class="card-text">Large size mixed biryanis with an array of tender meats, fragrant spices, and aromatic rice.
+                                </p>
+                                <div class="cb"
+                                    style="display:flex;flex-direction:row;justify-content:space-around;margin: 12px;font-size: 13px;">
+                                    <input type="checkbox">Spicy
+                                    <input type="checkbox">Aromatic
+                                    <input type="checkbox">TenderPiece
+                                </div>
+                                <h3 style="padding: 5px;">₹ 499/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="desertlist">
+                    <h1 style="margin-top: 50px;">Deserts | Drinks | Snacks</h1><br>
+                    <p>This is the main content of the landing page.</p><br>
+                    <div class="card-container">
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/chocolatepudding.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Chocolate Pudding</h5>
+                                <p class="card-text">Pudding of dark chocolate </p>
+                                <h3 style="padding: 5px;margin-top: 65px;">₹ 59/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/chocolateculinary.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Chocolate Culinary</h5>
+                                <p class="card-text">One of the best desert which have chocolate cake with melted
+                                    chocolate and spinkles stars</p>
+                                <h3 style="padding: 5px;">₹ 99/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/pumkincake.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pumkin Cake</h5>
+                                <p class="card-text">Cup cake with pumkin stuff creeam and red cherry crust </p>
+                                <h3 style="padding: 5px;margin-top: 40px;">₹ 59/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/waffle.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Waffle</h5>
+                                <p class="card-text">Made from leavened batter or dough that is cooked between two
+                                    patterned plates</p>
+                                <h3 style="padding: 5px;">₹ 129/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/stawberrycheesecake.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Chesse Cake</h5>
+                                <p class="card-text">Strawberry favlour chocolate base chesse cake</p>
+                                <h3 style="padding: 5px;margin-top: 40px;">₹ 99/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/softy.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Softy</h5>
+                                <p class="card-text">Chocolate, White, Mixed softy are Avaliable!!</p>
+                                <h3 style="padding: 5px;margin-top: 45px;">₹ 29/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/steamMomos.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Steam Momos</h5>
+                                <p class="card-text">8 piece stuffed steam momos with red chilli sauce and mayonese </p>
+                                <h3 style="padding: 5px;">₹ 79/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/friedmomos.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fried Momos</h5>
+                                <p class="card-text">8 piece stuffed fried momos with red chilli sauce and mayonese </p>
+                                <h3 style="padding: 5px;">₹ 89/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/frenchfries.jpg" class="imgcard" alt="...">
+                            <div class="card-body ">
+                                <h5 class="card-title">French Fries</h5>
+                                <p class="card-text">Masala french fries with peri peri sauce and meyonese</p>
+                                <h3 style="padding: 5px;">₹ 59/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/cocacola.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">CocaCola</h5>
+                                <p class="card-text">1 big + 1 medium Cans</p>
+                                <h3 style="padding: 5px;">₹ 69/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/pepsi.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Pepssi</h5>
+                                <p class="card-text">Cold pepssi can!</p>
+                                <h3 style="padding: 5px;">₹ 29/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/BlueMocktail.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Mocktail</h5>
+                                <p class="card-text">Cold blue mocktail </p>
+                                <h3 style="padding: 5px;">₹ 49/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/mojitojpg.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Mojito</h5>
+                                <p class="card-text">lemon mojito pizzsert flavor</p>
+                                <h3 style="padding: 5px;margin-top: 40px;">₹ 69/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/milkshake.jpg" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">MilkShakes</h5>
+                                <p class="card-text">Chocolate | Mango | Strawberry | pineapple Milshakes avaliable!</p>
+                                <h3 style="padding: 5px;">₹ 39/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assests/bisleri.png" class="imgcard" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Bisleri</h5>
+                                <p class="card-text">Chilled water bottle!!</p>
+                                <h3 style="padding: 5px;margin-top: 40px;">₹ 21/-</h3>
+                                <a href="#" class="btn btn-primary">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="home3">
+                    <h2 style="color: white;">Feedback</h2>
+                    <p style="color: white;"> This is the feeback, comments, rating content of the biryani hOUSE
+                        page.</p>
+                    <div class="feedbackcard">
+                        <div class="card col-3">
+                            <br>
+                            <img style="width: 100px;height: 100px;border-radius: 50%;border:3px solid #fcb865;margin: auto;"
+                                src="" alt="">
+                            <h4>personn 1</h4>
+                            <p></p>
+                            <h3> <i class="bi bi-star-fill"></i></h3>
+                            <br>
+                        </div>
+                        <div class="card col-3">
+                            <br>
+                            <img style="width: 100px;height: 100px;border-radius: 50%;border:3px solid #fcb865;margin: auto;"
+                                src="" alt="">
+                            <h4>person 2</h4>
+                            <p></p>
+                            <h3> <i class="bi bi-star-fill"></i></h3>
+                            <br>
+                        </div>
+                        <div class="card col-3">
+                            <br>
+                            <img style="width: 100px;height: 100px;border-radius: 50%;border:3px solid #fcb865;margin: auto;"
+                                src="" alt="">
+                            <h4>person 3</h4>
+                            <p></p>
+                            <h3><i class="bi bi-star-fill"></i></h3>
+                            <br>
+                        </div>
+                        <div class="card col-3">
+                            <br>
+                            <img style="width: 100px;height: 100px;border-radius: 50%;border:3px solid #fcb865;margin: auto;"
+                                src="" alt="">
+                            <h4>person 4</h4>
+                            <p> </p>
+                            <h3><i class="bi bi-star-fill"></i></h3>
+                            <br>
+                        </div>
+                        <div class="card col-3">
+                            <br>
+                            <img style="width: 100px;height: 100px;border-radius: 50%;border:3px solid #fcb865;margin: auto;"
+                                src="" alt="">
+                            <h4>person 5</h4>
+                            <p></p>
+                            <h3><i class="bi bi-star-fill"></i></h3>
+                            <br>
+                        </div>
+                        <div class="card col-3">
+                            <br>
+                            <img style="width: 100px;height: 100px;border-radius: 50%;border:3px solid #fcb865;margin: auto;"
+                                src="" alt="">
+                            <h4>person 6 </h4>
+                            <p></p>
+                            <h3><i class="bi bi-star-fill"></i></h3>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feedback">
+
+                    <div class="feedback-container">
+                        <div class="petu-img">
+                            <img src="./assests/person1.jpg" alt="" width="300px" height="300px">
+                        </div>
+                        <div class="feedback-form">
+                            <h2 style="text-align: center; color: yellow;">Share Your Experience with Us!</h2>
+                            <div class="form-group">
+                                <label for="name">Name:</label><br>
+                                <input type="text" id="name" name="name" placeholder="enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label><br>
+                                <input type="email" id="email" name="email" placeholder="enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="rating">Rating:</label><br>
+                                <input type="number" id="rating" name="rating" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="comments">Comments:</label><br>
+                                <textarea id="comments" name="comments" rows="4" placeholder="enter your experience"
+                                    required></textarea>
+                            </div>
+                            <button type="submit">Submit Feedback</button>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="footersection">
+                    <h2>Biryani </h2>
+
+                    <div class="col1">
+                        <h5>Biryani House</h5>
+                        <a href="">
+                            <p>Who we are</p>
+                        </a>
+                        <a href="">
+                            <p>investors relation</p>
+                        </a>
+                        <a href="">
+                            <p>Nutrition</p>
+                        </a>
+                        <a href="">
+                            <p>Contact us</p>
+                        </a>
+                    </div>
+
+                    <div class="col2">
+                        <h5>Our Policies</h5>
+                        <a href="">
+                            <p>Privacy</p>
+                        </a>
+                        <a href="">
+                            <p>Terms and Conditions </p>
+                        </a>
+                        <a href="">
+                            <p>Responsible Disclosure</p>
+                        </a>
+                        <a href="">
+                            <p>FAQs & Help</p>
+                        </a>
+                    </div>
+
+                    <div class="col3">
+                        <h5>Social Media</h5>
+                        <div class="icons">
+                            <a href=""><i class="bi bi-instagram"></i></a>
+                            <a href=""><i class="bi bi-facebook"></i></a>
+                            <a href=""><i class="bi bi-whatsapp"></i></a><br>
+                            <a href=""><i class="bi bi-twitter"></i></a>
+                            <a href=""><i class="bi bi-youtube"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="col4">
+                        <h5>Download App</h5>
+                        <a href=""><img src="./assests/app_store.png" alt="" width="100px" height="30px"></a>
+                        <a href=""><img src="./assests/play_store.png" alt="" width="100px" height="30px"></a>
+                    </div>
+
+                </div>
+
+    </div>
+
+    </section>
+    </main>
+
+    <footer>
+        <p>Biryani &copy; 2024. All Copyrights are reserved.</p>
+    </footer>
+    </div>
+</body>
+
+</html>
